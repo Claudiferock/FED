@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Exercise 1.4 HTML5 semantic elements</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Federo');
+        * {
+            margin: 0px;
+            padding: 1px;            
+        }
+        body {
+            background-color: darkslategrey;
+        }
+        .topnav {
+            background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            opacity:0.5;
+            color: coral;
+        }
+        h1 {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Federo;
+            background-color: grey;
+            border: 5px solid rgba (0,0,0,0.7);
+            opacity: 0.7;
+            top: 50px;
+            font-size: 100px;
+        }
+        h2 {
+
+        }
+        p {
+            color: white;
+            margin: 5px;
+        }
+        section {
+            background: url("https://images.unsplash.com/photo-1432847712612-926caafaa802?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat;
+        }
+        footer {
+            font-family: "Arial Black", Gadget, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1>Header</h1></header>
+    <nav>
+        <div class="topnav" id="topnav">
+            <a href="#topnav">Go to: </a>
+            <a href="#article1">Article 1</a>
+            <a href="#article2">Article 2</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </nav>
+    <section>
+        <p>Here are some article peaces</p>
+        <article id="article1">
+            <h2>Article 1</h2>
+            <p>Etiam feugiat, sem quis viverra rutrum, leo leo congue massa, non pulvinar dui tortor eu nisl. Nunc tempor tortor erat, vitae elementum augue pellentesque non. Aliquam porta eleifend odio, eu dictum est interdum id. Proin sed felis at turpis venenatis vulputate. Curabitur dignissim urna quis est semper, eget bibendum sapien vehicula. Aliquam vel sagittis neque, in efficitur leo. In lacinia turpis eros, a pellentesque libero viverra tincidunt. Fusce in felis ac mauris tincidunt ultrices. Morbi ultricies quis leo a gravida. Morbi vel est massa. Integer aliquet lectus rhoncus velit pulvinar maximus.
+
+Nam laoreet nulla id sapien sodales, in lacinia lectus hendrerit. Mauris molestie massa magna, non tempor risus vulputate at. Curabitur eu enim dui. Cras lacinia nunc augue, vitae elementum sapien dapibus sed. Pellentesque blandit nunc laoreet velit malesuada vestibulum. Phasellus ut maximus ante, sit amet interdum nisi. Aliquam ornare leo neque, a auctor tortor suscipit at. Nulla sagittis, neque et bibendum porta, magna neque laoreet risus, non ultrices turpis lorem nec libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend suscipit sodales. Suspendisse consectetur elementum quam ac interdum. Praesent fringilla ex mi, at maximus ipsum consectetur tincidunt. Maecenas lectus ante, semper iaculis sem sit amet, pretium rhoncus nibh. Cras non arcu eget nibh dignissim tincidunt. Maecenas eu eros sit amet purus vestibulum pharetra.</p>
+        </article>
+        <article id="article2">
+            <h2>Article 2</h2>
+            <p>Vestibulum rutrum purus nunc, non porta leo efficitur eget. In risus nisl, porttitor ut eros id, pretium gravida nulla. Maecenas rutrum blandit nulla, dignissim porttitor odio aliquet scelerisque. Suspendisse interdum blandit tortor, nec auctor leo molestie at. Sed iaculis sit amet urna a ornare. Cras ut bibendum nunc, sit amet sagittis dolor. Integer eget leo a neque finibus fringilla. Vivamus faucibus diam vitae velit euismod consectetur vitae a quam. Ut et auctor libero. Donec dignissim ac eros vel fringilla. Etiam sollicitudin pharetra libero ut ultricies. Pellentesque eleifend ante sit amet velit feugiat cursus.
+
+Nullam vitae cursus mi. Praesent scelerisque pretium massa ac accumsan. In rutrum, tellus aliquet condimentum sagittis, risus erat lacinia tellus, vitae consequat ante ante ac lectus. Aenean a auctor purus. Proin nisi nulla, dictum vitae dui sit amet, scelerisque volutpat est. Aenean felis sem, maximus pretium dictum sagittis, lobortis laoreet sem. Suspendisse vel commodo velit. Pellentesque turpis augue, pretium et quam sit amet, finibus aliquam leo. Aenean sagittis pharetra risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat.</p>
+        </article>
+    </section>
+    <footer id="footer"><p>&copy; Claudio Rodriguez 2018<br>
+        <a href="https://github.com/Claudiferock/FED"> Github</a>    </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Excercise 1.3 Drag & Drop</title>
+    <style>
+        #bascket {
+            width: 350px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <p>Drag the product you want to buy to the shopping bascket</p>
+
+    <div id="bascket" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <strong>Shopping Bascket:</strong>
+        <p>Iphone X</p>
+        <p>Motorola Moto X</p>
+    </div>
+    <br />
+    <strong>Products:</strong>
+    <br />
+
+    <div id="products" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p id="drag1" draggable="true" ondragstart="drag(event)">Samsung Galaxy J5 </p>
+        <p id="drag2" draggable="true" ondragstart="drag(event)">Nokia 8 </p>
+    </div>
+
+</body>
+</html>
