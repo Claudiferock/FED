@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Federo');
+
+body {
+    background-image: url('images/ep_naturalblack/ep_naturalblack.png');
+}
+div {
+    background-color:white;
+}
+h1 {
+    color: tomato;
+    background-color: darkgrey;
+    opacity: 0.5;
+    top: 50px;
+    text-align: center;
+    font-size: 60px;
+    font: Federo;
+}
+table {
+    width: 95%;
+}
+th {
+    background-color: lightblue;
+}
+th, td {
+    text-align: left;
+    border-bottom: 1px solid lightgrey;
+}
+footer {
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
