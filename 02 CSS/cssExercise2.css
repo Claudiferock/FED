@@ -1,0 +1,73 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Federo');
+
+* {
+    margin: 0px;
+    padding: 1px;
+}
+
+body {
+    background-image: url('images/ep_naturalblack/ep_naturalblack.png');
+}
+
+.topnav {
+    background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    opacity: 0.5;
+    color: coral;
+}
+h1 {
+    color: red;
+    text-transform: uppercase;
+    background-color: black;
+    opacity: 0.7;
+    top: 50px;
+    font-size: 100px;
+}
+p {
+    color: lightcyan;
+    margin: 5px;
+}
+figcaption {
+    color:darkblue;
+}
+section {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin-left: 5%;
+    background: url("https://images.unsplash.com/photo-1432847712612-926caafaa802?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    max-height: 240px;
+    max-width: 360px;
+}
+figcaption {
+    color: lightcoral;
+}
+footer {
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
