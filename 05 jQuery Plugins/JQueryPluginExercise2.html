@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JQuery Plugin Exercise 1 Validation</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JQuery Plugin Exercise 2 List of Countries</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Select2 jQuery plugin -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
- 
- 	<h1>JQuery Plugin Exercise 1 Validation</h1>
-
-  <div class="container">
-    
-   <h1>Registration</h1>
-
-   <form class="cmxform" id="signupForm" method="get" >
+ 	<h1>JQuery Plugin Exercise 2 List of Countries</h1>
+  <div class="container">    
+    <h1>Registration</h1>
+    <form class="cmxform" id="signupForm" method="get" >
       <div class="row">
               <div class="col">
                   <label for="firstname">First Name</label>
-                  <input id="firstname" name="firstname" type="text" class="form-control"/>
+                  <input id="firstname" name="firstname" type="text" class="form-control" data-toggle="tooltip"/>
               </div>
               <div class="col">
                   <label for="lastname">Last Name</label>
-                  <input id="lastname" name="lastname" type="text" class="form-control"/>
+                  <input id="lastname" name="lastname" type="text" class="form-control" data-toggle="tooltip"/>
               </div>
-      </div>
+      </div><br>
       <div class="row">
-              <div class="col-12">
+              <div class="col">
                 <label for="streetaddress">Street Address</label>
-                <input id="streetaddress" name="streetaddress" type="text" class="form-control"/>
+                <input id="streetaddress" name="streetaddress" type="text" class="form-control" data-toggle="tooltip"/>
               </div>
-      </div>
-      <div class="row">
               <div class="col">
                 <label for="postal">Postal code</label>
-                <input id="postal" name="postal" type="text" class="form-control"/>
-              </div>
-              <div class="col">
-                <label for="country">Country</label>
-                <input id="country" name="country" type="text" class="form-control"/>
-              </div>
-      </div>
-
+                <input id="postal" name="postal" type="text" class="form-control" data-toggle="tooltip"/>
+              </div>              
+      </div><br>
+      <div class="row">
+              <div class="col-12" id="countryModal">                
+                  <div>
+                    <label for="countrySelect2">Country</label>
+                    <select id="countrySelect2" name="countrySelect2" type="text" class="custom-select" title="Enter country" data-toggle="tooltip">
+                      <option value="FI">Finland</option>
+                      <option value="FA">Faroe Islands</option>
+                      <option value="FJ">Fiji</option>
+                    </select>
+                  </div>             
+              </div>              
+      </div><br>
       <div class="row">
               <div class="col">
                 <label for="company">Company</label>
-                <input id="company" name="company" type="text" class="form-control"/>
+                <input id="company" name="company" type="text" class="form-control" data-toggle="tooltip"/>
               </div>
               <div class="col">
                 <label for="email">Email Address</label>
-                <input id="email" name="email" type="Email" class="form-control"/>
+                <input id="email" name="email" type="Email" class="form-control" data-toggle="tooltip"/>
               </div>
-      </div>	
+      </div><br>
+      <div class=>
+          <div class="col"> 
               <fieldset class="form-group" id="payment">
               <label class="col-form-label"> Payment Methods </label>
                 <div class="form-check">            
@@ -68,26 +73,34 @@
                   <input class="form-check-input" type="radio" name="options" id="bill"/>
                   <label class="form-check-label" for="bill"> Billing </label>
                 </div>
-              </fieldset>      
+              </fieldset>    
+          </div>   
+      </div>
+      <br>
       <div class="form-group-row">
           <div class="col-sm-10">
           <button type="submit" class="btn btn-primary"> Submit &raquo;</button>
           </div>
       </div>
-		</div>
-	</form>
+    </form>
+  </div>
 
 	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS, then jQuery Validation, then Select2 plugin -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- jQuery Validation -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
- <script>
+  <script>
     $(document).ready(function() {
+      $('.custom-select').select2();
+      $('#countrySelect2').select2({
+        dropdownParent: $('#countryModal')
+      });
       $("#signupForm").validate({
         rules: {
           firstname: { 
@@ -109,7 +122,7 @@
             required: true,
             digits: true ,
           },
-          country: {
+          countrySelect2: {
           	required: true,
           },
           company: {
@@ -123,28 +136,27 @@
             required: true,
           },
         },
-          messages: {
-            firstname: {
-              required: "Please enter your firstname",
-              minlength: "Please lengthen this text to 2 characters or more (you are currently using 1 characters).",
-              maxlength: "Please maintain this length of this text to 40 or less characters."
-            },
-            lastname: {
-              required: "Please enter your lastname",
-              minlength: "Please lengthen this text to 2 characters or more (you are currently using 1 characters).",
-              maxlength: "Please maintain this length of this text to 40 or less characters."
-            },
-            email: {
-            	required: "Please enter a valid email address"
-            },
-            options: {
-              required: "Please select one"
-            },
-          }
-      });
-
+        messages: {
+          firstname: {
+            required: "Please enter your firstname",
+            minlength: "Please lengthen this text to 2 characters or more (you are currently using 1 characters).",
+            maxlength: "Please maintain this length of this text to 40 or less characters."
+          },
+          lastname: {
+            required: "Please enter your lastname",
+            minlength: "Please lengthen this text to 2 characters or more (you are currently using 1 characters).",
+            maxlength: "Please maintain this length of this text to 40 or less characters."
+          },
+          email: {
+          	required: "Please enter a valid email address"
+          },
+          options: {
+            required: "Please select one"
+          },
+        }
+      });   
  		$('[data-toggle="tooltip"]').tooltip();      
-  		});
+  	});
   </script>
 </body>
 </html>

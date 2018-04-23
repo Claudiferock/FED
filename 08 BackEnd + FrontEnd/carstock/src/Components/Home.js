@@ -6,8 +6,7 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
-              <header>
-              <h2>My React car shop</h2>
+        <header>
         </header>
         
       </div>
