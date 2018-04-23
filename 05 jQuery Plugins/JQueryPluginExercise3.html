@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Plugin Exercise 3 Image gallery</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.1.0/dist/jquery.nanogallery2.min.js"></script>
+</head>
+<body>
+ 	<h1>jQuery Plugin Exercise 3 Image gallery</h1>
+  <div class="container">    
+    <h1>Supernova nanogallery</h1>
+    <div
+      id="nanogallery2"
+      data-nanogallery2 ='{
+        "thumbnailHeight":  250,
+        "thumbnailWidth":   250,
+        "thumbnailL1GutterWidth":  90,
+        "thumbnailL1GutterHeight": 90,
+        "itemsBaseURL":     "https://images.unsplash.com/",
+        "thumbnailStacksRotateZ":  0.4,
+        "thumbnailStacksRotateZ":  0.4,
+        "galleryBuildInit2":       "perspective-origin_50% 150%",
+        "thumbnailHoverEffect2":   "image_rotateZ_0deg_7deg_easeOutQuad_150_hoverin|image_rotateZ_7deg_-7deg_delay160_keyframe_hoverin_easeOutQuad_200|image_rotateZ_-7deg_0deg_delay320_keyframe_hoverin_easeOutQuad_150"
+        
+    }'>
+      <a href="photo-1447433819943-74a20887a81e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6835a9662eef0b0322a3ef6a1092ef33&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" data-ngThumb = "photo-1447433819943-74a20887a81e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6835a9662eef0b0322a3ef6a1092ef33&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">Supernova 1</a>
+      <a href="photo-1462331940025-496dfbfc7564?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1f8f8a17194030f5bf45f3e14fee725e&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" data-ngThumb = "photo-1462331940025-496dfbfc7564?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1f8f8a17194030f5bf45f3e14fee725e&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">Supernova 2</a>
+      <a href="photo-1447433553548-2fc162393482?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb89679cc9def4d8ef902e6852a6596b&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" data-ngThumb = "photo-1447433553548-2fc162393482?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb89679cc9def4d8ef902e6852a6596b&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">Supernova 3</a>
+    </div>
+  </div>
+</body>
+</html>
