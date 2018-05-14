@@ -123,32 +123,32 @@ updateCar = (link, car) => {
         		},
         		{
         			Header: "Brand",
-        			accessor: "brand"
+        			accessor: "brand",
         			Cell: this.renderEditable
         		},
         		{
         			Header: "Model",
-        			accessor: "model"
+        			accessor: "model",
         			Cell: this.renderEditable
         		},
         		{
         			Header: "Color",
-        			accessor: "color"
+        			accessor: "color",
         			Cell: this.renderEditable
         		},
         		{
         			Header: "Fuel",
-        			accessor: "fuel"
+        			accessor: "fuel",
         			Cell: this.renderEditable
         		},
         		{
         			Header: "Year",
-        			accessor: "year"
+        			accessor: "year",
         			Cell: this.renderEditable
         		},
         		{
         			Header: "Price €",
-        			accessor: "price"
+        			accessor: "price",
         			Cell: this.renderEditable
         		},
         		{
@@ -157,14 +157,14 @@ updateCar = (link, car) => {
         			filterable: false,
         			width: 100,
         			accessor: "_links.slef.href",
-        			Cell: ({value}) => (
+        			Cell: ({value, row}) => (
         				<button
         					type="button"
         					className="btn btn-outline-primary"
-        					onClick={() => {this.updateCar(row, value)}}>
+        					onClick={() => {this.updateCar(value, row)}}>
         					Save
         				</button>)
-        		}
+        		},
         		{
         			id: 'button',
         			sortable: false,

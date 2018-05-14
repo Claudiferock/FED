@@ -3,12 +3,12 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 8s linear;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgba(31, 21, 138, 0.568);
   height: 150px;
   padding: 20px;
   color: white;
@@ -18,11 +18,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Courier New", Courier, monospace;
-  background: linear-gradient(89deg, rgb(251, 255, 10) 3%, rgb(10, 102, 177) 100%); /* w3c */
+  background: linear-gradient(89deg, rgba(186, 189, 18, 0.849) 3%,
+   rgba(7, 77, 134, 0.904) 100%);
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 .App-intro {

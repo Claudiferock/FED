@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+
 import Particles from 'react-particles-js';
+import logo from './logo.svg';
 import './App.css';
 
+import CustomerList from "./Components/CustomerList"
+import TrainingList from "./Components/TrainingList"
+import AddCustomer from "./Components/AddCustomer"
+
 const particlesOptions = {
-  particles: {
-    number: {
-      value: 68,
-      density: {
-        enable: true,
-        value_area: 800
+  "particles": {
+    "number": {
+      "value": 68,
+      "density": {
+        "enable": true,
+        "value_area": 800
       }
     }
   },
@@ -24,7 +30,7 @@ const particlesOptions = {
     "modes": {
       "bubble": {
         "distance": 100,
-        "size": 5,
+        "size": 10,
         "duration": 2,
         "opacity": 0.8,
         "speed": 5
@@ -41,10 +47,22 @@ class App extends Component {
             params={particlesOptions} />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">GYM Database</h1>
         </header>
+        <BrowserRouter>
+          <div>
+            <Link className='f2 black bg-animate hover-bg-light-blue pointer' to="/">FrontPage</Link>{' '}
+            <Link className='f2 black bg-animate hover-bg-light-blue pointer' to="/customers">Customers</Link>{' '}
+            <Link className='f2 black bg-animate hover-bg-light-blue pointer' to="/trainings">Trainings</Link>{' '}
+            <Switch>
+              <Route exact path="/" render={() => <h2>Welcome!</h2>}/>
+              <Route path="/customers" component={CustomerList}/>
+              <Route path="/trainings" component={TrainingList}/>
+            </Switch>
+          </div>
+        </BrowserRouter>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Try switching between Customers and Trainings!
         </p>
       </div>
     );
