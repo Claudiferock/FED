@@ -1,0 +1,109 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Federo');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.topnav {
+    background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") .3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'federo' , sans-serif;
+    letter-spacing: 4px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover:not(:first-child) {
+    opacity: 0.5;
+    background-color: rgba(0, 195, 197, 0.05);
+    color: coral;
+}
+h1 {
+    color: tomato;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .4);
+    opacity: 0.7;
+    top: 50px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    color: coral;
+}
+
+p {
+    color: lightcyan;
+    margin: 5px;
+}
+figcaption {
+    color:darkblue;
+}
+section {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(65deg, rgba(0,0,0, .4) , rgba(0,0,0, .5)), url("https://images.unsplash.com/photo-1432847712612-926caafaa802?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    background-size: cover;
+}
+
+article {
+    width: 40%;
+    margin: 20px 0;
+    padding: 10px;
+    outline: 1px dotted rgb(50, 75, 85);
+    text-align: justify;
+    text-overflow: ellipsis;
+    
+}
+article p {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    max-height: 240px;
+    max-width: 360px;
+}
+figcaption {
+    color: lightcoral;
+    background-color: rgba(0, 0, 0, .7)
+}
+footer {
+    color: white;
+    font-family: 'federo' , sans-serif;
+}
+
+footer a {
+    color:white;
+}
+footer a:hover {
+    color:lightcoral;
+}
